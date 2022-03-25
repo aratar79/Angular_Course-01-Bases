@@ -13,5 +13,7 @@ export class MainPageComponent {
 
   nuevo: Personaje = { nombre: 'Goku', poder: 150000 };
 
-  
+  agregarNuevoPersonaje(arg: Personaje) {
+    this.Personajes.push(arg);
+  }
 }
