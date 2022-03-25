@@ -1,0 +1,29 @@
+<div id="wrapper">
+    <h1>Heroe Component WORKS!</h1>
+<br>
+<app-contador></app-contador>
+<h2>{{nombre}}</h2>
+<br>
+<dl>
+    <td>Nombre:</td>
+    <dd>{{nombre}}</dd>
+    <br>
+    <td>Edad:</td>
+    <dd>{{edad}}</dd>
+    <br>
+    <td>Función:</td>
+    <dd>{{retornarNombre()}}</dd>
+    <br>
+    <td>Nombre Capitalizado:</td>
+    <dd>{{nombreCapitalizado}}</dd>
+</dl>
+<br>
+<div id="buttonsWrapper">
+    <button (click)="cambiarNombre()">Cambiar Héroe</button>
+    <button (click)="cambiarEdad()">Cambiar Edad</button>
+</div>
+<br>
+<div id="list-heroes">
+    <app-listado></app-listado>
+</div>
+</div>
